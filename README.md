@@ -2,28 +2,26 @@
 
 This repository contains the official documentation for Bitor, security scanning and automation platform. The documentation is built using [Starlight](https://starlight.astro.build), a documentation framework powered by Astro.
 
-📚 **View the live documentation at [bitorscanner.io](https://bitorscanner.io)**
+📚 **View the live documentation at [bitor.dev](https://bitor.dev)**
 
-## 🚀 Quick Start
+## 🚀 Building Docs Locally
 
 ```bash
-# Download the Bitor executable
-wget https://github.com/bitorscanner/bitor/releases/latest/download/bitor
+# Clone the repository
+git clone https://github.com/bitorscanner/docs.git
+cd docs
 
-# Make it executable
-chmod +x bitor
+# Install dependencies
+pnpm install
 
-# Set your API key (must be 32 characters)
-export ORBIT_API_KEY=$(openssl rand -base64 24 | tr -d '=+/[:space:]' | cut -c1-32)
+# Start development server
+pnpm dev
 
-# Start Bitor
-./bitor serve
-
-# Access the web interface at
-http://localhost:8090
+# Access the documentation at
+http://localhost:4321
 ```
 
-That's it! Bitor is now running and you can access the web interface in your browser.
+The development server will automatically reload when you make changes to the documentation files.
 
 ## 📖 Documentation Structure
 
@@ -37,16 +35,17 @@ docs/
 └── astro.config.mjs    # Astro configuration
 ```
 
-## 🛠️ Development
+## 🛠️ Available Commands
+
+| Command | Description |
+|---------|-------------|
+| `pnpm dev` | Start development server with hot reload |
+| `pnpm build` | Build documentation for production |
+| `pnpm preview` | Preview the production build locally |
 
 ### Prerequisites
-- Node.js (v16 or later)
-- pnpm (v7 or later)
-
-### Commands
-- `pnpm dev` - Start development server
-- `pnpm build` - Build for production
-- `pnpm preview` - Preview production build
+- Node.js (v18 or later)
+- pnpm (v8 or later)
 
 ## 🎨 Customization
 
