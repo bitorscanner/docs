@@ -1,13 +1,13 @@
 ---
 title: Docker Deployment
-description: Deploy Orbit using Docker and Docker Compose
+description: Deploy Bitor using Docker and Docker Compose
 ---
 
 import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 # Docker Deployment Guide
 
-This guide will help you deploy Orbit using Docker and Docker Compose.
+This guide will help you deploy Bitor using Docker and Docker Compose.
 
 ## Prerequisites
 
@@ -16,7 +16,7 @@ Before you begin, ensure you have:
 - Docker Compose V2 installed
 
 ## Quick Start
-The fastest way to get Orbit running with Docker:
+The fastest way to get Bitor running with Docker:
 
 
 ```bash
@@ -29,11 +29,11 @@ mkdir -p docker/data docker/nuclei-templates
 
 ```bash
 docker run -d \
-  --name orbit \
+  --name bitor \
   -p 8090:8090 \
   -v ./docker/data:/app/pb_data \
   -v ./docker/nuclei-templates:/app/nuclei-templates \
-  ghcr.io/orbitscanner/orbit:latest
+  ghcr.io/bitorscanner/bitor:latest
 ```
 
 ### Docker Compose
@@ -44,8 +44,8 @@ Create a `docker-compose.yml` file with the following contents:
 version: '3.8'
 
 services:
-  orbit:
-    image: ghcr.io/orbitscanner/orbit:latest
+  bitor:
+    image: ghcr.io/bitorscanner/bitor:latest
     restart: unless-stopped
     environment:
       - API_ENCRYPTION_KEY=12345678901234567890123456789012  # Change this!
@@ -68,7 +68,7 @@ services:
         max-file: "3"
 ```
 
-Then start Orbit:
+Then start Bitor:
 
 ```bash
 docker-compose up -d
@@ -85,7 +85,7 @@ docker-compose up -d
 
 ### Volumes
 
-- `/app/pb_data`: Persistent storage for Orbit data
+- `/app/pb_data`: Persistent storage for Bitor data
 - `/app/nuclei-templates`: Custom nuclei templates directory
 
 ### Ports
@@ -123,10 +123,10 @@ Docker volumes are used to persist data:
 
 ```bash
 # Backup data
-tar czf orbit_backup.tar.gz docker/data docker/nuclei-templates
+tar czf bitor_backup.tar.gz docker/data docker/nuclei-templates
 
 # Restore data
-tar xzf orbit_backup.tar.gz
+tar xzf bitor_backup.tar.gz
 ```
 
 ## Troubleshooting

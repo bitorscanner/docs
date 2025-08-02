@@ -1,11 +1,11 @@
 ---
 title: User Guide
-description: Learn how to use Orbit's features effectively
+description: Learn how to use Bitor's features effectively
 ---
 
 # User Guide
 
-This guide covers all the main features of Orbit and how to use them effectively.
+This guide covers all the main features of Bitor and how to use them effectively.
 
 ## User Management
 

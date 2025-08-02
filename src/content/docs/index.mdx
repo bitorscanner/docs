@@ -5,16 +5,16 @@ template: splash
 hero:
   tagline: Nuclei security scanning and automation platform
   image:
-    dark: ../../assets/Orbit_White_Logo.png
-    light: ../../assets/Orbit-Main-Logo.png
-    alt: Orbit Logo
+    dark: ../../assets/Bitor_White_Logo.png
+    light: ../../assets/Bitor-Main-Logo.png
+    alt: Bitor Logo
   actions:
     - text: Get Started
       link: /getting-started/
       icon: right-arrow
       variant: primary
     - text: View on GitHub
-      link: https://github.com/orbitscanner/orbit
+      link: https://github.com/bitorscanner/bitor
       icon: external
 ---
 
@@ -41,15 +41,15 @@ import ImageCarousel from '../../components/ImageCarousel.astro';
   </Card>
 </CardGrid>
 
-<h2>Orbit In Action</h2>
+<h2>Bitor In Action</h2>
 <ImageCarousel />
 
 <div class="video-section">
-  <h2>Watch Orbit Webcast</h2>
+  <h2>Watch Bitor Webcast</h2>
   <div class="video-container">
     <iframe
       src="https://www.youtube.com/embed/cdZXHd28Uog?start=2065"
-      title="Orbit Webcast"
+      title="Bitor Webcast"
       frameBorder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowFullScreen></iframe>
@@ -61,42 +61,42 @@ import ImageCarousel from '../../components/ImageCarousel.astro';
 <Tabs>
   <TabItem label="Prerequisites">
     :::caution[Required Tools]
-    Orbit requires Ansible and Terraform to be installed on your system.
+    Bitor requires Ansible and Terraform to be installed on your system.
     See the [Getting Started](/getting-started/) guide for installation instructions.
     :::
   </TabItem>
   <TabItem label="macOS">
     ```bash
     # For Apple Silicon (M1/M2)
-    wget https://github.com/orbitscanner/orbit/releases/download/v0.5.0/orbit_0.5.0_Darwin_arm64.tar.gz
-    tar -xzf orbit_0.5.0_Darwin_arm64.tar.gz
+    wget https://github.com/bitorscanner/bitor/releases/download/v0.5.0/bitor_0.5.0_Darwin_arm64.tar.gz
+    tar -xzf bitor_0.5.0_Darwin_arm64.tar.gz
 
     # For Intel Macs
-    wget https://github.com/orbitscanner/orbit/releases/download/v0.5.0/orbit_0.5.0_Darwin_x86_64.tar.gz
-    tar -xzf orbit_0.5.0_Darwin_x86_64.tar.gz
+    wget https://github.com/bitorscanner/bitor/releases/download/v0.5.0/bitor_0.5.0_Darwin_x86_64.tar.gz
+    tar -xzf bitor_0.5.0_Darwin_x86_64.tar.gz
     ```
   </TabItem>
   <TabItem label="Linux">
     ```bash
     # For x86_64 systems
-    wget https://github.com/orbitscanner/orbit/releases/download/v0.5.0/orbit_0.5.0_Linux_x86_64.tar.gz
-    tar -xzf orbit_0.5.0_Linux_x86_64.tar.gz
+    wget https://github.com/bitorscanner/bitor/releases/download/v0.5.0/bitor_0.5.0_Linux_x86_64.tar.gz
+    tar -xzf bitor_0.5.0_Linux_x86_64.tar.gz
 
     # For ARM64 systems
-    wget https://github.com/orbitscanner/orbit/releases/download/v0.5.0/orbit_0.5.0_Linux_arm64.tar.gz
-    tar -xzf orbit_0.5.0_Linux_arm64.tar.gz
+    wget https://github.com/bitorscanner/bitor/releases/download/v0.5.0/bitor_0.5.0_Linux_arm64.tar.gz
+    tar -xzf bitor_0.5.0_Linux_arm64.tar.gz
     ```
   </TabItem>
   <TabItem label="Run">
     ```bash
     # Make it executable
-    chmod +x orbit
+    chmod +x bitor
 
     # Set your encryption key (must be 32 characters)
     export API_ENCRYPTION_KEY=12345678901234567890123456789012
 
-    # Start Orbit
-    ./orbit serve
+    # Start Bitor
+    ./bitor serve
 
     # Access the web interface at
     http://localhost:8090
@@ -106,16 +106,9 @@ import ImageCarousel from '../../components/ImageCarousel.astro';
 
 <CardGrid>
   <Card title="Read the Documentation" icon="open-book">
-    Learn how to [set up and configure](/getting-started/) Orbit for your security needs.
+    Learn how to [set up and configure](/getting-started/) Bitor for your security needs.
   </Card>
-  <Card title="Join Our Community" icon="discord">
-    Join the discussion in the [BHIS Discord](https://discord.gg/BHIS) community. We're here to help!
-  </Card>
+
 </CardGrid>
 
-<div class="powered-by">
-  <p>Brought to you by</p>
-  <a href="https://www.blackhillsinfosec.com" target="_blank" rel="noopener noreferrer">
-    <img src="/blackhills-logo.png" alt="Black Hills Information Security Logo" />
-  </a>
-</div>
+

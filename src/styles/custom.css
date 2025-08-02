@@ -1,12 +1,12 @@
-/* Custom styles for Orbit documentation */
+/* Custom styles for Bitor documentation */
 
 /* Logo handling for dark/light modes */
-[data-theme='dark'] .orbit-logo {
-  content: url('../assets/Orbit_White_Logo.png');
+[data-theme='dark'] .bitor-logo {
+  content: url('../assets/Bitor_White_Logo.png');
 }
 
-[data-theme='light'] .orbit-logo {
-  content: url('../assets/Orbit-Main-Logo.png');
+[data-theme='light'] .bitor-logo {
+  content: url('../assets/Bitor-Main-Logo.png');
 }
 
 /* Override Starlight variables for consistent branding */

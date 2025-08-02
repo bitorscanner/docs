@@ -7,10 +7,10 @@ import tailwind from '@astrojs/tailwind';
 export default defineConfig({
     integrations: [
         starlight({
-        title: 'Orbit',
+        title: 'Bitor',
         logo: {
-            light: './src/assets/Orbit-Main-Logo.png',
-            dark: './src/assets/Orbit_White_Logo.png',
+            light: './src/assets/Bitor-Main-Logo.png',
+            dark: './src/assets/Bitor_White_Logo.png',
             replacesTitle: true,
         },
         favicon: '/favicon/favicon.ico',
@@ -50,7 +50,7 @@ export default defineConfig({
             },
         ],
         social: {
-            github: 'https://github.com/orbitscanner/orbit',
+            github: 'https://github.com/bitorscanner/bitor',
         },
         customCss: [
             // Relative path to your custom CSS file

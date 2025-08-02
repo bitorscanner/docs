@@ -1,13 +1,13 @@
 ---
 title: Getting Started
-description: Learn how to install and run Orbit on your system
+description: Learn how to install and run Bitor on your system
 ---
 
-# Getting Started with Orbit
+# Getting Started with Bitor
 
 ## Prerequisites
 
-Orbit requires Ansible and Terraform for automation and infrastructure management. Here's how to install them:
+Bitor requires Ansible and Terraform for automation and infrastructure management. Here's how to install them:
 
 ### macOS
 
@@ -53,31 +53,31 @@ sudo yum -y install terraform
 For Apple Silicon (M1/M2) Macs:
 ```bash
 # Download the macOS ARM64 version
-wget https://github.com/orbitscanner/orbit/releases/download/v0.5.0/orbit_0.5.0_Darwin_arm64.tar.gz
+wget https://github.com/bitorscanner/bitor/releases/download/v0.5.0/bitor_0.5.0_Darwin_arm64.tar.gz
 
 # Extract the archive
-tar -xzf orbit_0.5.0_Darwin_arm64.tar.gz
+tar -xzf bitor_0.5.0_Darwin_arm64.tar.gz
 ```
 
 For Intel Macs:
 ```bash
 # Download the macOS Intel/x86_64 version
-wget https://github.com/orbitscanner/orbit/releases/download/v0.5.0/orbit_0.5.0_Darwin_x86_64.tar.gz
+wget https://github.com/bitorscanner/bitor/releases/download/v0.5.0/bitor_0.5.0_Darwin_x86_64.tar.gz
 
 # Extract the archive
-tar -xzf orbit_0.5.0_Darwin_x86_64.tar.gz
+tar -xzf bitor_0.5.0_Darwin_x86_64.tar.gz
 ```
 
 After extracting, continue with:
 ```bash
 # Make it executable
-chmod +x orbit
+chmod +x bitor
 
 # Set your encryption key (must be 32 characters)
 export API_ENCRYPTION_KEY=12345678901234567890123456789012
 
-# Start Orbit
-./orbit serve
+# Start Bitor
+./bitor serve
 
 # Access the web interface at
 http://localhost:8090
@@ -88,31 +88,31 @@ http://localhost:8090
 For x86_64 (64-bit) systems:
 ```bash
 # Download the Linux x86_64 version
-wget https://github.com/orbitscanner/orbit/releases/download/v0.5.0/orbit_0.5.0_Linux_x86_64.tar.gz
+wget https://github.com/bitorscanner/bitor/releases/download/v0.5.0/bitor_0.5.0_Linux_x86_64.tar.gz
 
 # Extract the archive
-tar -xzf orbit_0.5.0_Linux_x86_64.tar.gz
+tar -xzf bitor_0.5.0_Linux_x86_64.tar.gz
 ```
 
 For ARM64 systems:
 ```bash
 # Download the Linux ARM64 version
-wget https://github.com/orbitscanner/orbit/releases/download/v0.5.0/orbit_0.5.0_Linux_arm64.tar.gz
+wget https://github.com/bitorscanner/bitor/releases/download/v0.5.0/bitor_0.5.0_Linux_arm64.tar.gz
 
 # Extract the archive
-tar -xzf orbit_0.5.0_Linux_arm64.tar.gz
+tar -xzf bitor_0.5.0_Linux_arm64.tar.gz
 ```
 
 After extracting, continue with:
 ```bash
 # Make it executable
-chmod +x orbit
+chmod +x bitor
 
 # Set your encryption key (must be 32 characters)
 export API_ENCRYPTION_KEY=12345678901234567890123456789012
 
-# Start Orbit
-./orbit serve
+# Start Bitor
+./bitor serve
 
 # Access the web interface at
 http://localhost:8090
@@ -131,17 +131,17 @@ If using WSL2, you can follow the Ubuntu installation instructions above within 
 
 ## Docker Installation
 
-Docker provides the easiest way to run Orbit across all platforms.
+Docker provides the easiest way to run Bitor across all platforms.
 
 ```bash
-# Pull the Orbit image
-docker pull ghcr.io/orbitscanner/orbit:latest
+# Pull the Bitor image
+docker pull ghcr.io/bitorscanner/bitor:latest
 
-# Run Orbit container
+# Run Bitor container
 docker run -d \
   -p 8090:8090 \
   -e API_ENCRYPTION_KEY=12345678901234567890123456789012 \
-  ghcr.io/orbitscanner/orbit:latest
+  ghcr.io/bitorscanner/bitor:latest
 
 # Access the web interface at
 http://localhost:8090
@@ -155,18 +155,18 @@ For a more complete setup, you can use Docker Compose:
 # docker-compose.yml
 version: '3.8'
 services:
-  orbit:
-    image: ghcr.io/orbitscanner/orbit:latest
+  bitor:
+    image: ghcr.io/bitorscanner/bitor:latest
     ports:
       - "8090:8090"
     environment:
       - API_ENCRYPTION_KEY=12345678901234567890123456789012
     volumes:
-      - orbit_data:/data
+      - bitor_data:/data
     restart: unless-stopped
 
 volumes:
-  orbit_data:
+  bitor_data:
 ```
 
 Run with:
@@ -176,18 +176,18 @@ docker-compose up -d
 
 ## Next Steps
 
-- [Setup Guide](/setup-guide/) - Configure Orbit through the web interface
-- [Configuration Guide](/configuration/) - Learn how to configure Orbit
-- [User Guide](/user-guide/) - Learn how to use Orbit's features
-- [Development Guide](/development/) - Set up Orbit for development
+- [Setup Guide](/setup-guide/) - Configure Bitor through the web interface
+- [Configuration Guide](/configuration/) - Learn how to configure Bitor
+- [User Guide](/user-guide/) - Learn how to use Bitor's features
+- [Development Guide](/development/) - Set up Bitor for development
 - [API Reference](/api-reference/) - Explore the API documentation
-- Join our [Discord community](https://discord.gg/BHIS) for support
+
 
 ## Troubleshooting
 
 If you encounter any issues:
 
-1. Check the logs with `./orbit logs`
+1. Check the logs with `./bitor logs`
 2. Ensure all prerequisites are installed
 3. Verify your encryption key is exactly 32 characters
 4. Join our Discord for community support 

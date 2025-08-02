@@ -1,29 +1,29 @@
-# Orbit Documentation
+# Bitor Documentation
 
-This repository contains the official documentation for Orbit, security scanning and automation platform. The documentation is built using [Starlight](https://starlight.astro.build), a documentation framework powered by Astro.
+This repository contains the official documentation for Bitor, security scanning and automation platform. The documentation is built using [Starlight](https://starlight.astro.build), a documentation framework powered by Astro.
 
-📚 **View the live documentation at [orbitscanner.io](https://orbitscanner.io)**
+📚 **View the live documentation at [bitorscanner.io](https://bitorscanner.io)**
 
 ## 🚀 Quick Start
 
 ```bash
-# Download the Orbit executable
-wget https://github.com/orbitscanner/orbit/releases/latest/download/orbit
+# Download the Bitor executable
+wget https://github.com/bitorscanner/bitor/releases/latest/download/bitor
 
 # Make it executable
-chmod +x orbit
+chmod +x bitor
 
 # Set your API key (must be 32 characters)
 export ORBIT_API_KEY=$(openssl rand -base64 24 | tr -d '=+/[:space:]' | cut -c1-32)
 
-# Start Orbit
-./orbit serve
+# Start Bitor
+./bitor serve
 
 # Access the web interface at
 http://localhost:8090
 ```
 
-That's it! Orbit is now running and you can access the web interface in your browser.
+That's it! Bitor is now running and you can access the web interface in your browser.
 
 ## 📖 Documentation Structure
 
@@ -66,8 +66,7 @@ We welcome contributions to improve the documentation! Please:
 
 ## 📝 License
 
-This documentation is brought to you by [Black Hills Information Security](https://www.blackhillsinfosec.com).
 
-## 💬 Community
 
-Join our community on [Discord](https://discord.gg/BHIS) for support and discussions.
+
+

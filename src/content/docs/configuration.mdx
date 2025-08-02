@@ -1,11 +1,11 @@
 ---
 title: Configuration Guide
-description: Learn how to configure and customize Orbit
+description: Learn how to configure and customize Bitor
 ---
 
 # Configuration Guide
 
-This guide covers all configuration options and customization possibilities in Orbit.
+This guide covers all configuration options and customization possibilities in Bitor.
 
 ## Environment Variables
 
@@ -15,7 +15,7 @@ This guide covers all configuration options and customization possibilities in O
 PUBLIC_POCKETBASE_URL=http://127.0.0.1:8090
 
 # Application Settings
-PUBLIC_APP_NAME="Orbit"
+PUBLIC_APP_NAME="Bitor"
 PUBLIC_APP_URL="http://localhost:5173"
 
 # Email Configuration
@@ -140,7 +140,7 @@ Location: `src/lib/email-templates/`
 ```html
 <!-- invitation.html -->
 <h1>Welcome to {{organizationName}}</h1>
-<p>You've been invited to join {{organizationName}} on Orbit.</p>
+<p>You've been invited to join {{organizationName}} on Bitor.</p>
 <a href="{{inviteUrl}}">Accept Invitation</a>
 ```
 
@@ -189,7 +189,7 @@ export const corsConfig = {
 export const cacheConfig = {
   ttl: 3600,
   storage: 'localStorage',
-  prefix: 'orbit:'
+  prefix: 'bitor:'
 }
 ```
 
