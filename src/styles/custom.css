@@ -2,7 +2,7 @@
 
 /* Logo handling for dark/light modes */
 [data-theme='dark'] .bitor-logo {
-  content: url('../assets/Bitor_White_Logo.png');
+  content: url('../assets/Bitor_White_logo.png');
 }
 
 [data-theme='light'] .bitor-logo {

@@ -10,7 +10,7 @@ export default defineConfig({
         title: 'Bitor',
         logo: {
             light: './src/assets/Bitor-Main-Logo.png',
-            dark: './src/assets/Bitor_White_Logo.png',
+            dark: './src/assets/Bitor_White_logo.png',
             replacesTitle: true,
         },
         favicon: '/favicon/favicon.ico',
