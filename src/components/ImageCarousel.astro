@@ -50,6 +50,15 @@
 
   // Start auto-advance
   interval = setInterval(nextSlide, 5000);
+  
+  // Clear interval when page is hidden (optional cleanup)
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden && interval) {
+      clearInterval(interval);
+    } else if (!document.hidden && !interval) {
+      interval = setInterval(nextSlide, 5000);
+    }
+  });
 
   // Initial state
   updateSlides();
